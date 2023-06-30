@@ -37,7 +37,7 @@ public class Todos {
      * @param query Поисковый запрос
      * @return Массив из подошедших задач
      */
-    public Task[] search (String query) {
+    public Task[] search(String query) {
         Task[] result = new Task[0]; // массив для ответа
         for (Task task : tasks) { // перебираем все задачи
             if (task.matches(query)) { // если задача подходит под запрос

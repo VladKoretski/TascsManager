@@ -6,7 +6,7 @@ public class TodosTest {
     @Test
     public void shouldAddThreeTasksOfDifferentType() {
         SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
-        String[] subtasks = {"Молоко", "Яйца", "Хлеб" };
+        String[] subtasks = {"Молоко", "Яйца", "Хлеб"};
         Epic epic = new Epic(55, subtasks);
 
         Meeting meeting = new Meeting(
@@ -33,7 +33,7 @@ public class TodosTest {
     @Test
     public void shouldSearchAndFindTasks() {
         SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
-        String[] subtasks = {"Позвонить", "Купить", "Заказать доставку" };
+        String[] subtasks = {"Позвонить", "Купить", "Заказать доставку"};
         Epic epic = new Epic(55, subtasks);
 
         Meeting meeting = new Meeting(
@@ -59,7 +59,7 @@ public class TodosTest {
     @Test
     public void shouldSearchAndFindNoTask() {
         SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
-        String[] subtasks = {"Позвонить", "Купить", "Заказать доставку" };
+        String[] subtasks = {"Позвонить", "Купить", "Заказать доставку"};
         Epic epic = new Epic(55, subtasks);
 
         Meeting meeting = new Meeting(
@@ -86,7 +86,7 @@ public class TodosTest {
     @Test
     public void shouldSearchFindSimpleTask() {
         SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
-        String[] subtasks = {"Зайти", "Купить", "Заказать доставку" };
+        String[] subtasks = {"Зайти", "Купить", "Заказать доставку"};
         Epic epic = new Epic(55, subtasks);
 
         Meeting meeting = new Meeting(
@@ -113,7 +113,7 @@ public class TodosTest {
     @Test
     public void shouldSearchFindMeetingTopic() {
         SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
-        String[] subtasks = {"Зайти", "Купить", "Заказать доставку" };
+        String[] subtasks = {"Зайти", "Купить", "Заказать доставку"};
         Epic epic = new Epic(55, subtasks);
 
         Meeting meeting = new Meeting(
@@ -140,7 +140,7 @@ public class TodosTest {
     @Test
     public void shouldSearchFindMeetingProject() {
         SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
-        String[] subtasks = {"Зайти", "Купить", "Заказать доставку" };
+        String[] subtasks = {"Зайти", "Купить", "Заказать доставку"};
         Epic epic = new Epic(55, subtasks);
 
         Meeting meeting = new Meeting(
@@ -167,7 +167,7 @@ public class TodosTest {
     @Test
     public void shouldSearchFindEpic() {
         SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
-        String[] subtasks = {"Зайти", "Купить", "Заказать доставку" };
+        String[] subtasks = {"Зайти", "Купить", "Заказать доставку"};
         Epic epic = new Epic(55, subtasks);
 
         Meeting meeting = new Meeting(
@@ -195,7 +195,7 @@ public class TodosTest {
     public void shouldSearchFindSimpleTaskAndEpic() {
 
         SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
-        String[] subtasks = {"Позвонить", "Купить", "Заказать доставку" };
+        String[] subtasks = {"Позвонить", "Купить", "Заказать доставку"};
         Epic epic = new Epic(55, subtasks);
 
         Meeting meeting = new Meeting(
@@ -222,7 +222,7 @@ public class TodosTest {
     @Test
     public void shouldSearchFindSimpleTaskAndMeeting() {
         SimpleTask simpleTask = new SimpleTask(5, "Купить");
-        String[] subtasks = {"Позвонить", "Договориться", "Заказать доставку" };
+        String[] subtasks = {"Позвонить", "Договориться", "Заказать доставку"};
         Epic epic = new Epic(55, subtasks);
 
         Meeting meeting = new Meeting(
@@ -249,7 +249,7 @@ public class TodosTest {
     @Test
     public void shouldSearchFindEpicTaskAndMeeting() {
         SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
-        String[] subtasks = {"Позвонить", "Купить", "Заказать доставку" };
+        String[] subtasks = {"Позвонить", "Купить", "Заказать доставку"};
         Epic epic = new Epic(55, subtasks);
 
         Meeting meeting = new Meeting(

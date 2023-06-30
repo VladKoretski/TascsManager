@@ -106,7 +106,7 @@ public class TaskTest {
     //Find query for class Epic
     @Test
     public void shouldFindQueryEpicFirst() {
-        String[] subtasks = {"Молоко", "Яйца", "Хлеб" };
+        String[] subtasks = {"Молоко", "Яйца", "Хлеб"};
         Epic epic = new Epic(55, subtasks);
         String query = "Молоко";
         Boolean expected = true;
@@ -117,7 +117,7 @@ public class TaskTest {
 
     @Test
     public void shouldFindQueryEpicSecond() {
-        String[] subtasks = {"Молоко", "Яйца", "Хлеб" };
+        String[] subtasks = {"Молоко", "Яйца", "Хлеб"};
         Epic epic = new Epic(55, subtasks);
         String query = "Яйца";
         Boolean expected = true;
@@ -128,7 +128,7 @@ public class TaskTest {
 
     @Test
     public void shouldFindQueryEpicThird() {
-        String[] subtasks = {"Молоко", "Яйца", "Хлеб" };
+        String[] subtasks = {"Молоко", "Яйца", "Хлеб"};
         Epic epic = new Epic(55, subtasks);
         String query = "Хлеб";
         Boolean expected = true;
@@ -139,7 +139,7 @@ public class TaskTest {
 
     @Test
     public void shouldFindQueryEpic() {
-        String[] subtasks = {"Молоко", "Молоко", "Молоко" };
+        String[] subtasks = {"Молоко", "Молоко", "Молоко"};
         Epic epic = new Epic(55, subtasks);
         String query = "Молоко";
         Boolean expected = true;
@@ -150,7 +150,7 @@ public class TaskTest {
 
     @Test
     public void shouldNotFindQueryEpic() {
-        String[] subtasks = {"Молоко", "Яйца", "Хлеб" };
+        String[] subtasks = {"Молоко", "Яйца", "Хлеб"};
         Epic epic = new Epic(55, subtasks);
         String query = "Картошка";
         Boolean expected = false;
@@ -164,7 +164,7 @@ public class TaskTest {
     @Test
     public void shouldCheckGetterForAllTypesOfTasks() {
         SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
-        String[] subtasks = {"Молоко", "Яйца", "Хлеб" };
+        String[] subtasks = {"Молоко", "Яйца", "Хлеб"};
         Epic epic = new Epic(55, subtasks);
 
         Meeting meeting = new Meeting(
@@ -198,7 +198,7 @@ public class TaskTest {
         Assertions.assertEquals(expectedTitle, actualTitle);
 
         // getters for Epic
-        String[] expectedSubtasks = {"Молоко", "Яйца", "Хлеб" };
+        String[] expectedSubtasks = {"Молоко", "Яйца", "Хлеб"};
         String[] actualSubtasks = epic.getProject();
 
         Assertions.assertArrayEquals(expectedSubtasks, actualSubtasks);
